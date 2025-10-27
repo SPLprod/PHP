@@ -8,14 +8,13 @@
 <body>
 
     <?php
-        $personne = [
-        "nom" => "Dupont",
-        "prenom" => "Jean",
-        "age" => 30
-        ];
+        $nombre = 28469;
+        $str = "C'est quoi le mot de passe ?";
 
-        print_r($personne);
+        var_dump($nombre);
+        var_dump($str);
+
     ?>
-    
+
 </body>
 </html>

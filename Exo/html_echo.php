@@ -8,13 +8,8 @@
 <body>
 
     <?php
-        $personne = [
-        "nom" => "Dupont",
-        "prenom" => "Jean",
-        "age" => 30
-        ];
+        echo "<p>Ceci est mon paragraphe <b>gras</b> en <i>italique</i> et <u>souligné</u></p>";
 
-        print_r($personne);
     ?>
     
 </body>

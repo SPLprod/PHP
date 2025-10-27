@@ -8,13 +8,9 @@
 <body>
 
     <?php
-        $personne = [
-        "nom" => "Dupont",
-        "prenom" => "Jean",
-        "age" => 30
-        ];
+        $message = "Salut salut j'ai fini! J'adooooooooooore le PHP";
 
-        print_r($personne);
+        echo "<h1>" . $message . "</h1><br>";
     ?>
     
 </body>

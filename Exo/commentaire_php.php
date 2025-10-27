@@ -6,16 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
-    <?php
-        $personne = [
-        "nom" => "Dupont",
-        "prenom" => "Jean",
-        "age" => 30
-        ];
-
-        print_r($personne);
-    ?>
     
+    <?php
+        // Je fais nimp mdrr
+        $Moi = "moi";
+        echo "Salut, c'est bien" . " " . $Moi
+    ?>
+
 </body>
 </html>
