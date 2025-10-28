@@ -10,7 +10,7 @@
     <?php
         $message = "Salut salut j'ai fini! J'adooooooooooore le PHP";
 
-        echo "<h1>" . $message . "</h1><br>";
+        echo "<h1> $message </h1><br>";
     ?>
     
 </body>

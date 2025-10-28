@@ -10,7 +10,7 @@
     <?php
         // Je fais nimp mdrr
         $Moi = "moi";
-        echo "Salut, c'est bien" . " " . $Moi
+        echo "Salut, c'est bien " . $Moi
     ?>
 
 </body>
