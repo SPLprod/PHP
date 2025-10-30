@@ -153,11 +153,15 @@
 
     print_r($snom);
 
+
+    // Tableau des noms prénoms
     $names = ["Riri", "Fifi", "Loulou"];
     $surname = ["Grigri", "Frifri", "Grougrou"];
 
+    // Tableau vide dans lequel on fusionnera les infos
     $ducks = [];
 
+    // On bloucle tout ça et on met les info dans des tableaux dans le tableau TABLEAUCEPTION
     for ($i = 0; $i < count($names); $i++) {
         $ducks[] = [
             "nom" => $names[$i],
@@ -165,4 +169,5 @@
         ];
     }
 
+    // On affiche tout ça
     print_r($ducks);
