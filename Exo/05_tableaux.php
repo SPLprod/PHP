@@ -152,3 +152,17 @@
     }
 
     print_r($snom);
+
+    $names = ["Riri", "Fifi", "Loulou"];
+    $surname = ["Grigri", "Frifri", "Grougrou"];
+
+    $ducks = [];
+
+    for ($i = 0; $i < count($names); $i++) {
+        $ducks[] = [
+            "nom" => $names[$i],
+            "prenom" => $surname[$i]
+        ];
+    }
+
+    print_r($ducks);
