@@ -40,6 +40,9 @@
  *   Affichez chaque information avec une phrase descriptive.
  */
 
+
+
+
     $guilty = [
         "nom" => "Flament",
         "prénom" => "Maël ",
@@ -49,6 +52,9 @@
     echo "L'individu se nomme " . $guilty["prénom"] . $guilty["nom"] . ", il est agé de " . $guilty["age"] . " ans.";
     echo "<br><br>";
 
+
+
+    
 /**Exercice 4 : Compter les éléments d'un tableau
  *  Objectif : Utilisez les fonctions count() et sizeof().
  *  Instructions :
