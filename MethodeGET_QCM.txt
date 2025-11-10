@@ -1,0 +1,130 @@
+QCM : Méthode GET en HTTP  
+
+ 
+
+ 
+
+1. La méthode GET est utilisée pour récupérer des données depuis un serveur. 
+
+    Oui
+
+ 
+
+2. Les paramètres d'une requête GET sont envoyés dans le corps de la requête. 
+
+    Nope, toujours l'URL
+ 
+
+3. Les paramètres de la méthode GET sont visibles dans l'URL. 
+
+    Yep, donc met pas d'info trop compromettante
+ 
+
+4. La méthode GET est sécurisée pour transmettre des informations sensibles comme des mots de passe. 
+
+    Nope, l'info passe sur l'URL donc c'est pas sécure
+
+ 
+
+5. Les données transmises via GET peuvent être mises en cache par le navigateur. 
+
+    Yes, les données transmises via la méthode GET peuvent effectivement être mises en cache par le navigateur, ce qui améliore les performances en évitant des requêtes répétées au serveur.
+ 
+
+6. Les requêtes GET sont souvent utilisées pour des opérations qui ne modifient pas l'état du serveur. 
+
+    Yes, du style barre de recherche (c.f Cours PoleS: "GET - Ne modifie pas l'état du serveur.")
+
+ 
+
+7. Il est possible d'envoyer des fichiers via une requête GET. 
+
+    Nan mais on peut en récuppérer, "To send files with GET in PHP, you can use the file_get_contents function to retrieve data from a URL. Here's a basic example:
+    $data = file_get_contents($url);
+    echo $data;"
+
+ 
+
+8. La méthode GET est généralement utilisée pour récupérer des ressources statiques comme des images ou des fichiers CSS. 
+
+    C'est possible, en récupèrant le chemin d'accès sinon Nope on ne peut pas stocker des images ou d'autres fichiers
+
+ 
+
+9. Les requêtes GET sont limitées en taille par la longueur de l'URL. 
+
+    Nope, GET n'est pas limité en tant que tel mais d'autres paramètres peuvent limiter la quantité de caractères dans l'URL (navigateur web, configuration web server, configuration PHP)
+
+    IE browser:2083Characters
+    Firefox:65,536Characters
+    Safari:80,000Characters
+    Opera:190,000Characters
+    Google:8182Characters
+
+    https://topic.alibabacloud.com/a/is-there-a-limit-on-the-length-of-the--_-get-method-in-php_1_34_33028034.html
+
+ 
+
+10. Une requête GET peut déclencher une action sur le serveur, comme la suppression d'une ressource. 
+
+    Yes, GET can trigger server-side actions in PHP, c'est Bing qui le dit mais en ce qui concerne supprimer de ressources je dirais non puisque GET récupère uniquement ses infos depuis l'URL
+ 
+
+11. Les données envoyées via GET peuvent être modifiées facilement par un utilisateur. 
+
+    Yes, tous ce que l'utilisateur doit faire pour modifier les infos est juste de modifier l'URL
+ 
+
+12. Les requêtes GET sont souvent enregistrées dans les journaux de serveur web. 
+
+    "Yes — in PHP (and in general HTTP), GET requests are often logged by the web server, but it’s not PHP itself that logs them.", Merci Bing
+ 
+
+13. La méthode GET est souvent utilisée pour soumettre des formulaires lorsque les données ne sont pas sensibles. 
+
+    Je vois pas trop l'intérêt mais ouais c'est possible
+
+ 
+
+14. Les requêtes GET sont automatiquement répétées en cas de perte de connexion.
+
+    Nope, ça sera répéter uniquement si l'info de la requête n'existe plus sinons ces info seront récupéré
+
+ 
+
+15. Les données envoyées via GET sont automatiquement chiffrées par HTTPS.
+
+    oui, chiffré après le nom de domaine
+
+
+ 
+
+16. Il est recommandé d'utiliser GET pour les requêtes qui ne doivent pas être répétées. 
+
+    Yes, pour éviter une ré-execution de la requête
+
+ 
+
+17. Les requêtes GET ne peuvent pas inclure de paramètres de requête dans l'URL. 
+
+    Nope, GET récupère les paramètres depuis l'URL et non l'inverse
+ 
+
+18. Les données envoyées par GET sont généralement visibles dans l'historique du navigateur. 
+
+    Yes, sur l'onglet network de l'inspecteur
+
+ 
+
+19. Les requêtes GET peuvent être utilisées pour obtenir le contenu d'une page web. 
+
+    Yes, https://www.bing.com/ck/a?!&&p=19363297b932107973fdcd944fbaf1fc26636f0a957663464966827735dfb894JmltdHM9MTc2MjczMjgwMA&ptn=3&ver=2&hsh=4&fclid=36c71c61-48c1-6366-2a16-0a4a49786253&u=a1aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvZnIvZG9jcy9XZWIvSFRUUC9SZWZlcmVuY2UvTWV0aG9kcy9HRVQ&ntb=1
+
+ 
+
+20. Les requêtes GET peuvent être utilisées pour envoyer des données à un serveur. 
+
+    Nan, mais c'est possible (même si c'est possible)
+
+    ça c'est le boulot de POST
+       
