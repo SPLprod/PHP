@@ -7,6 +7,12 @@
     <title>Choix de couleur de fond</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+        <?php
+            if (isset($_GET["delete_cookie"])) {
+                setcookie("bg", "", time() - 3600);
+                
+            }
+        ?>
 
 <body class="<?php echo isset($_COOKIE['bg']) ? $_COOKIE["bg"] : '' ?>">
     <h1>Choisissez votre couleur de fond :</h1>
@@ -33,11 +39,6 @@
 
     <h2><a href="?delete_cookie=true">Réinitialiser la couleur</a></h2>
 
-    <?php
-        if (isset($_GET["delete_cookie"])) {
-            setcookie("bg", "", time() - 3600);
-        }
-    ?>
 
 </body>
 
