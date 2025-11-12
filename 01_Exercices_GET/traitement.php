@@ -12,11 +12,34 @@
  * 
  */
 
-    if (isset($_GET["name"]) && !empty($_GET["name"]) && isset($_GET["price"]) && !empty($_GET["price"])) {
+    if (isset($_GET["name"]) && !empty($_GET["name"]) && isset($_GET["price"]) && !empty($_GET["price"])&& isset($_GET["rank"]) && !empty($_GET["rank"])) {
         var_dump($_GET);
     } else {
         echo "<h2 style='color : red'>Error, parameters not found.</h2>";
     }
+
+
+    // SALIHA VER.
+    // function verif($x): bool
+    // {
+    //     if (isset($x) && !empty($x)) {
+    //         return true;
+    //     } else {
+    //         return false;
+    //     }
+    // }
+    // if (verif($_GET)) {
+    
+    
+    //     echo " <div>";
+    //     echo '<p>Article : ' . $_GET["name"] . '</p>';
+    //     echo '<p>Couleur : ' . $_GET["color"] . '</p>';
+    //     echo '<p>Prix : ' . $_GET["price"] . ' Dollars.</p>';
+    
+    //     echo "</div>";
+    
+    
+    // }
 
 
 /** Exercice 2 : Validation des paramètres
@@ -39,6 +62,18 @@
     if (!$_GET["rank"]) {
         echo "Missing parameter";
     }
+
+    // MAEL VER.
+    // $tab = ["product", "color", "value"];
+    // $chk = false;
+    // foreach ($tab as $elmt){
+    //     if(!valid($_GET[$elmt])){
+    //         echo "<p> Le paramètre $elmt est manquant<p>";
+    //         $chk = true;
+    //     }
+    // };
+    // $ans = $chk ? "ya un pb chef" :  "tt est good";
+    // echo $ans;
     
     echo "<br><br>";
 
@@ -55,6 +90,11 @@
  */
 
     echo $_GET["price"] * 0.92 . "€";
+
+    // MAEL VER.
+    // if($price = valid($_GET["value"])){
+    //     echo ((float) $price)*0.92;
+    // }
 
     echo "<br><br>";
 
@@ -91,7 +131,9 @@
  */
 
     if ($_GET["price"] > 20) {
-        echo "WOAW C'EST CHER TOUT çA!!!";
+        echo htmlspecialchars("WOAW C'EST CHER TOUT çA!!!");
     } else {
         echo "C'est cheap";
     }
+    
+    echo htmlspecialchars($_GET["price"] > 20 ? "WOAW C'EST CHER TOUT çA!!!" : "C'est cheap");
