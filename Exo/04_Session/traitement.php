@@ -33,8 +33,6 @@
     lenverif($mdp, 20, 6);
    }
     
-   
-
    foreach ($_POST as $key => $value) {
     $_SESSION["$key"] = trim($value);
    }
