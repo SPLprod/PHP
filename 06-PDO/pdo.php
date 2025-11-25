@@ -64,7 +64,7 @@
     //---------------------------------------
     // exec() est utilisée pour la formulation de requêtes ne retournant pas de résultat : INSERT, DELETE, UPDATE.
 
-    // $resultat = $pdo->exec("INSERT INTO employes (prenom, nom, sexe, service, date_embauche, salaire) VALUES ('ryan', 'Baugrand', 'm', 'dev', '2016-02-08', 500)");
+    $resultat = $pdo->exec("INSERT INTO employes (prenom, nom, sexe, service, date_embauche, salaire) VALUES ('ryan', 'Baugrand', 'm', 'dev', '2016-02-08', 500)");
 
     // /* Valeur de retour :
     //     - Succès : renvoie le nombre de lignes affectées par la requête
